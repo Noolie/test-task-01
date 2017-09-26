@@ -1,0 +1,23 @@
+{
+  "name": "test-task-01",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https://noolie.github.io/test-task-01/",
+  "dependencies": {
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.13",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "redux-devtools": "^3.4.0"
+  }
+}
