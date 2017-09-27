@@ -11,10 +11,10 @@ class Cart extends Component {
   createActiveProductList(){
     return this.props.products.map((product)=>{
       return(
-        <tr key={product.id}>
+        <tr key={product.id} className='cart-item'>
           <td>{product.name}</td>
           <td>{product.price} USD</td>
-          <td>
+          <td className='quantity-field'>
             <button onClick={()=>this.props.decreaseQuantity(product)} className='minus-quantity'>-</button>
             <p className='product-quantity'>{product.quantity}</p>
             <button onClick={()=>this.props.increaseQuantity(product)} className='plus-quantity'>+</button>
@@ -39,15 +39,15 @@ class Cart extends Component {
   render(){
     if(!this.props.products || this.props.products.length < 1) {
       return (
-        <div>your cart is empty</div>
+        <div className='empty-cart'><p>your cart is empty</p></div>
       )
     }
     return (
       <div className='cart-field'>
         <table>
-          <tbody>
+          <tbody className='blabla'>
 
-            <tr>
+            <tr className='cart-title'>
               <th>item</th>
               <th>price</th>
               <th>quantity</th>
