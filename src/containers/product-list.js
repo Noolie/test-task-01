@@ -11,7 +11,7 @@ class ProductList extends Component {
         <li key={product.id} className='product-item'>
           <img className='product-image' src={product.image} alt={product.name} />
           <p className='product-name'>{product.name}</p>
-          <h3 className='product-price'>{product.price} {product.currency}</h3>
+          <h3 className='product-price'>{product.price} USD</h3>
           <button onClick={() => this.props.addToCart(product)} className='product-add'>add to cart</button>
         </li>
       );

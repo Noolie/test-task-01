@@ -25,6 +25,18 @@ body {
 .product-add{
   padding: 10px;
 }
+.product-quantity{
+  font-size: 20px;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 0 10px;
+  width: 20px;
+  cursor: default;
+  user-select: none;
+}
+.plus-quantity,.minus-quantity{
+  padding: 5px 10px;
+}
 .cart-field{
   display: inline-block;
   padding: 20px;
